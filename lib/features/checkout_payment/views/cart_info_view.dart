@@ -8,10 +8,7 @@ class CartInfoView extends StatelessWidget {
     return Scaffold(
       appBar: customAppBar(context, title: AppStrings.myCart),
       body: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: 20.responsiveWidth(context),
-          vertical: 12.responsiveHeight(context),
-        ),
+        padding: EdgeInsets.symmetric(horizontal: 20.responsiveWidth(context)),
         child: Column(
           children: [
             //! Cart Image
@@ -43,6 +40,7 @@ class CartInfoView extends StatelessWidget {
               onPressed: () {},
               title: AppStrings.completePayment,
             ),
+            SizedBox(height: 46.responsiveHeight(context)),
           ],
         ),
       ),
