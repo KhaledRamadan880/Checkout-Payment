@@ -1,3 +1,5 @@
+import 'package:checkout_payment/core/theme/theme.dart';
+import 'package:checkout_payment/features/checkout_payment/views/cart_info_view.dart';
 import 'package:flutter/material.dart';
 
 class CheckoutPaymentApp extends StatelessWidget {
@@ -5,9 +7,10 @@ class CheckoutPaymentApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      theme: theme(),
+      home: const CartInfoView(),
     );
   }
 }

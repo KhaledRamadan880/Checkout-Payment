@@ -18,7 +18,7 @@ abstract class Styles {
       fontFamily: 'Inter',
     );
   }
-  
+
   static TextStyle style22(context) {
     return TextStyle(
       fontSize: 22.responsiveText(context),
