@@ -1,4 +1,5 @@
 import 'package:checkout_payment/core/imports/imports.dart';
+import 'package:checkout_payment/features/checkout_payment/views/payment_details_view.dart';
 
 class CartInfoView extends StatelessWidget {
   const CartInfoView({super.key});
@@ -37,7 +38,14 @@ class CartInfoView extends StatelessWidget {
             SizedBox(height: 16.responsiveHeight(context)),
             //! Complete Payment Button
             CustomElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return const PaymentDetailsView();
+                  }),
+                );
+              },
               title: AppStrings.completePayment,
             ),
             SizedBox(height: 46.responsiveHeight(context)),
