@@ -26,9 +26,9 @@ class PaymentDetailsView extends StatelessWidget {
         ),
         children: const [
           //* Payment Methods List View
-          const PaymentMethodListView(),
+          PaymentMethodListView(),
           //* Credit Cards
-          const CustomCreditCard(),
+          CustomCreditCard(),
         ],
       ),
     );
