@@ -23,5 +23,6 @@ class AppStrings {
   static const String date = "Date";
   static const String time = "Time";
   static const String to = "To";
+  static const String creditCard = "Credit Card";
   static const String paid = "PAID";
 }

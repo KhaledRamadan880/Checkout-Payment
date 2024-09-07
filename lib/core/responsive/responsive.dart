@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 const num uiWidth = 390;
-const num uiHeight = 797;
+const num uiHeight = 844;
 
 extension ResponsiveUI on num {
   responsiveWidth(BuildContext context) {

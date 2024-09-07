@@ -5,15 +5,21 @@ class TitleAndValue extends StatelessWidget {
     super.key,
     required this.title,
     required this.value,
+    this.bottomPadding,
+    this.isPrice,
   });
 
   final String title;
-  final double value;
+  final dynamic value;
+  final double? bottomPadding;
+  final bool? isPrice;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(bottom: 3.responsiveHeight(context)),
+      padding: EdgeInsets.only(
+        bottom: bottomPadding ?? 3.responsiveHeight(context),
+      ),
       child: Row(
         children: [
           Text(
@@ -22,7 +28,7 @@ class TitleAndValue extends StatelessWidget {
           ),
           const Spacer(),
           Text(
-            r"$" + value.toString(),
+            (isPrice == false ? "" : r"$") + value.toString(),
             style: Styles.style18(context),
           ),
         ],

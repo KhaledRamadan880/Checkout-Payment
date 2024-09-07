@@ -1,4 +1,5 @@
 import 'package:checkout_payment/core/imports/imports.dart';
+import 'package:checkout_payment/features/checkout_payment/views/thank_you_view.dart';
 import 'package:flutter_credit_card/flutter_credit_card.dart';
 
 class CustomCreditCard extends StatefulWidget {
@@ -62,7 +63,14 @@ class _CustomCreditCardState extends State<CustomCreditCard> {
           const Spacer(),
           //* Pay Button
           CustomElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ThankYoView(),
+                ),
+              );
+            },
             title: AppStrings.pay,
           ),
         ],

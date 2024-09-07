@@ -54,4 +54,13 @@ abstract class Styles {
       fontFamily: 'Inter',
     );
   }
+
+  static TextStyle style16(context) {
+    return TextStyle(
+      fontSize: 16.responsiveText(context),
+      color: AppColors.black,
+      fontWeight: FontWeight.w400,
+      fontFamily: 'Inter',
+    );
+  }
 }
